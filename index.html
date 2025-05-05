@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Plante Ton Mémo</h1>
+    <div id="intro">
+
+        <p>L’espace de jeu est composé de cartes face cachée.<br> Le joueur retourne deux cartes à la fois.<br>
+            Si elles sont identiques, elles restent visibles.<br> Sinon, elles se retournent à nouveau.<br>
+            Le but est de retrouver toutes les paires en moins de 3 minutes.<br><br>
+            Observe bien, fais appel à ta mémoire… et laisse la nature t’aider.</p>
+
+            
+    <button id="start" class="start">Commencer le Jeu</button>
+    </div>
+    
+    <div id="jeu"> 
+        <button id="refresh" class="refresh">Recommencer</button>
+
+    <div id="tentative" class="tentative"></div>
+    <div id="chrono" class="chrono"></div>
+
+    <table id="game-table">
+
+        <tr>
+            <td>
+                <div class="card-container"></div>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card1.png" width = 100px class="front" id="card1"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card2.png" width = 100px class="front" id="card2"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card3.png" width = 100px class="front" id="card3"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card4.png" width = 100px class="front" id="card4"> 
+                </div>
+            </td>
+            <td>
+                <div class="card-container"></div>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card5.png" width = 100px class="front" id="card5"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card6.png" width = 100px class="front" id="card6"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card7.png" width = 100px class="front" id="card7"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card8.png" width = 100px class="front" id="card8"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card9.png" width = 100px class="front" id="card9"> 
+                </div>
+            </td>
+
+        </tr>
+
+
+        <tr class="trbis">
+
+        <br>
+            <td class="ligne">
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card1.png" width = 100px class="front" id="card01"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card2.png" width = 100px class="front" id="card02"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card3.png" width = 100px class="front" id="card03"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card4.png" width = 100px class="front" id="card04"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card5.png" width = 100px class="front" id="card05"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card6.png" width = 100px class="front" id="card06"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card7.png" width = 100px class="front" id="card07"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card8.png" width = 100px class="front" id="card08"> 
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="./img/Card.png" width = 100px class="back" id="cardback">
+                    <img src="./img/Card9.png" width = 100px class="front" id="card09"> 
+                </div>
+            </td>
+
+        </tr>
+    
+    </table>
+    </div>
+    <div id="game-over">
+        <h2>Temps écoulé...</h2>
+        <p>
+            Les éléments se sont désunis, la forêt reste silencieuse.<br>
+            Mais rien n'est perdu : retente ta chance et restaure l’équilibre.
+        </p>
+        <button id="start" class="start">Recommencer le Jeu</button>
+    </div>
+
+    <div id="victoire">
+        <h1>Félicitations !</h1>
+        <p>
+            <div id="score"></div><br>
+            Les forces de la nature sont en harmonie grâce à toi.<br>
+            Seras-tu capable de relever à nouveau le défi ?
+        </p>
+        <button id="start" class="start">Recommencer le Jeu</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+
+</html>
